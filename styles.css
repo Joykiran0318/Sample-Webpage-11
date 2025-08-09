@@ -1,0 +1,54 @@
+body {
+            background: linear-gradient(135deg, #4facfe, #00f2fe);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .glass-card {
+            background: rgba(0, 0, 0, 0.3);
+            /* Darker transparent background */
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 400px;
+            transition: transform 0.3s ease;
+        }
+
+        .glass-card:hover {
+            transform: translateY(-5px);
+        }
+
+        input {
+            background: rgba(255, 255, 255, 0.15) !important;
+            /* Lighter than form background */
+            border: none !important;
+            border-radius: 8px !important;
+            color: white !important;
+        }
+
+        input::placeholder {
+            color: rgba(255, 255, 255, 0.7) !important;
+        }
+
+        .btn-custom {
+            background: linear-gradient(135deg, #ff7eb3, #ff758c);
+            /* Soft pink gradient */
+            color: white;
+            border-radius: 8px;
+            border: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .btn-custom:hover {
+            background: linear-gradient(135deg, #ff9bbf, #ff8fa0);
+            transform: scale(1.05);
+            box-shadow: 0 4px 15px rgba(255, 121, 140, 0.5);
+        }
